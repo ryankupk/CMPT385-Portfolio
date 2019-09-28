@@ -7,15 +7,102 @@
     </head>
     <body>
         <h2 class="header" id="header">Ryan Kupka CMPT385 Portfolio</h2>
+        
         <div class="assignment" id="assignment1">
-            <button id="button1">
+            <h3 class="title" id="assignment1Title">Assignment 1: dynamic dice rolling program</h3>
+            <button id="button1" value = "1" onClick="openModal(this.value)">
                 <img src="img/artificial_intelligence.PNG">
             </button>
         </div>
+        
+        <div id="modal1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="close1">&times;</span>
+                <p>
+                
+                    The first assignment that I choose to include in this portfolio is a dynamically-programmed dice rolling algorithm that calculates the number of ways a number, M, can be rolled with a given number of dice, N. The reasons I chose this project are several-fold: the project was done with another programmer, I had only learned the concept of dynamic programming days before, and it demonstrates my desire for efficiency, concision, and simplicity for code. 
+                <p/>
+                <p>
+                    In real-world situations, it's rare to program an entire software system on one's own, especially software systems with substantial functionality. As such, my ability to work with a classmate and produce something of quality that we were both able to contribute to, to me, is something to be proud of. Furthermore, my ability to learn a new concept - in this case dynamic programming - understand it, and implement it in a limited timeframe demonstrates that I'm able to use my prior knowledge of programming to more easily acquire new methods for solving a problem and bring the solution to fruition, not only in a timely manner but while still maintaining high code standards. As such, the code is quite short but it's functionality is anything but. Initially, this code was at least 3 times as many lines, "spaghetti", and significantly less efficient. In general, my process for programming is to: understand the problem; prep the problem; work towards a solution and; once the solution is attained, improve the solution as much as I can so that it's concise, readable and simple.
+                
+                </p>
+                <a href="githubpage">Link to project on GitHub</a>
+            </div>
+
+        </div>
+        
         <div class="assignment" id="assignment2">
-            <button id="button2">
+            <h3 class="title" id="assignment2Title">Assignment 2: minimax, alpha-beta pruning and expectimax</h3>
+            <button id="button2" value = "2" onClick="openModal(this.value)">
                 <img src="img/algorithms.PNG">
             </button>
         </div>
+        
+        <div id="modal2" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="close2">&times;</span>               
+                <p>
+                
+                    The second assignment I chose to include in this portfolio is a minimax, alpha-beta pruning, and expectimax assignment I completed for my artificial intelligence class. I chose this project because it demonstrates my ability to work with relatively large codebases as well as use already written code and libraries to reach my goals, and it also demonstrates my ability to program with other people as this project was done in pairs as well.
+                </p>
+                <p>
+                    The code here is as concise as I could have made it while maintaining readability. It also contains highly pythonic concepts that I learned to try to improve the code in terms of efficiency and concision. Additionally, I enjoyed this project specifically because minimax and it's derivatives are very common in the artificial intelligence world, therefore I am now able to read texts or code and understand the underlying processes as well as the general problem and solution to said problem. This has already proven to be useful in my recreational studies of algorithms; for example, StockFish, an artificial intelligence chess engine, uses minimax as well as depth-limited depth first search to calculate optimal moves and a numerical score for chess positions. 
+                
+                </p>
+                <a href="githubpage">Link to project on GitHub</a>
+            </div>
+
+        </div>
+        
+        <div class="assignment" id="assignment3">
+            <h3 class="title" id="resumeTitle">Resume</h3>
+            <a id="resume" href="https://pdfhost.io/v/O7IJL7MXy_Resume_currentpdf.pdf" target=_blank>
+                <img src="img/resume.png">
+            </a>
+        </div>
+        
+        
+        
+        <script>
+        
+            function openModal(value) {
+                
+                // Get the modal
+                var modal = document.getElementById("modal" + value);
+                
+                // When the user clicks on the button, open the modal
+                
+                modal.style.display = "block";
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementById("close"+value);
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+
+               
+            
+            }
+            
+            
+            
+            
+        
+        </script>
+        
+        
     </body>
 </html>
