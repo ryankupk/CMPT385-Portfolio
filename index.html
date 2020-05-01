@@ -23,12 +23,12 @@
                 <p>
                 
                     The first assignment that I choose to include in this portfolio is a dynamically-programmed dice rolling algorithm that calculates the number of ways a number, M, can be rolled with a given number of dice, N. The reasons I chose this project are several-fold: the project was done with another programmer, I had only learned the concept of dynamic programming days before, and it demonstrates my desire for efficiency, concision, and simplicity for code. 
-                <p/>
+                </p>
                 <p>
                     In real-world situations, it's rare to program an entire software system on one's own, especially software systems with substantial functionality. As such, my ability to work with a classmate and produce something of quality that we were both able to contribute to, to me, is something to be proud of. Furthermore, my ability to learn a new concept - in this case dynamic programming - understand it, and implement it in a limited timeframe demonstrates that I'm able to use my prior knowledge of programming to more easily acquire new methods for solving a problem and bring the solution to fruition, not only in a timely manner but while still maintaining high code standards. As such, the code is quite short but it's functionality is anything but. Initially, this code was at least 3 times as many lines, "spaghetti", and significantly less efficient. In general, my process for programming is to: understand the problem; prep the problem; work towards a solution and; once the solution is attained, improve the solution as much as I can so that it's concise, readable and simple.
                 
                 </p>
-                <a href="githubpage">Link to project on GitHub</a>
+                <a href="https://github.com/ryankupk/CMPT385-Portfolio/blob/master/programs/roll_dice.py" target="_blank">Link to project on GitHub</a>
             </div>
 
         </div>
@@ -53,18 +53,129 @@
                     The code here is as concise as I could have made it while maintaining readability. It also contains highly pythonic concepts that I learned to try to improve the code in terms of efficiency and concision. Additionally, I enjoyed this project specifically because minimax and it's derivatives are very common in the artificial intelligence world, therefore I am now able to read texts or code and understand the underlying processes as well as the general problem and solution to said problem. This has already proven to be useful in my recreational studies of algorithms; for example, StockFish, an artificial intelligence chess engine, uses minimax as well as depth-limited depth first search to calculate optimal moves and a numerical score for chess positions. 
                 
                 </p>
-                <a href="githubpage">Link to project on GitHub</a>
+                <a href="https://github.com/ryankupk/CMPT385-Portfolio/blob/master/programs/multiAgents.py" target="_blank">Link to project on GitHub</a>
             </div>
 
         </div>
-        
+
+
         <div class="assignment" id="assignment3">
+            <h3 class="title" id="assignment3Title">Assignment 3: PacMan Q-Learning</h3>
+            <button id="button3" value = "3" onClick="openModal(this.value)">
+                <img src="img/Qlearning.png">
+            </button>
+        </div>
+        
+        <div id="modal3" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="close3">&times;</span>               
+                <p>
+                    This project uses Q-Learning to "teach" PacMan to avoid ghosts and seek out food pellets. Q-Learning is fairly cutting edge technology in the world of AI, and this application is quite robust. I chose to include this because Q-Learning is still very applicable for AI applications, particularly in mixed environments. 
+
+                </p>
+                <p>
+                    This application further shows how I write code then condense and improve it. I used several python list comprehensions because they're more efficient and compact than for loops. All the code written in this project is concise and accurate. There is very little room for improvement, and the program functions exactly to spec. Randomness is a factor in the learning as well as the ghost agents in the game, and PacMan is able to successfully maneuver any permutation given to it after an appropriate number of learning iterations.
+                    
+                </p>
+                <a href="https://github.com/ryankupk/CMPT385-Portfolio/blob/master/programs/qlearningAgents-1.py" target="_blank">Link to project on GitHub</a>
+            </div>
+
+        </div>
+
+
+        <div class="assignment" id="assignment4">
+            <h3 class="title" id="assignment4Title">Assignment 4: Dijkstra's Algorithm</h3>
+            <button id="button4" value = "4" onClick="openModal(this.value)">
+                <img src="img/dijkstra.png">
+            </button>
+        </div>
+        
+        <div id="modal4" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="close4">&times;</span>               
+                <p>
+                    Dijkstra's algorithm has been used for several years as a minimum cost path finding algorithm. It was published in 1965, but is still popular today especially in video games for AI path finding. I wrote this program in python and used the Bridges application for visualization which can be seen in the attached photo.
+
+                </p>
+                <p>
+                    This is a very simple algorithm but the usage for it is immense. Graph traversal is a common computer science paradigm, and Dijkstra's algorithm is regarded as one of the best in terms of both efficiency and accuracy. 
+                    
+                </p>
+                <a href="https://github.com/ryankupk/CMPT385-Portfolio/blob/master/programs/Dijkstra.py" target="_blank">Link to project on GitHub</a>
+            </div>
+
+        </div>
+
+
+        <div class="assignment" id="assignment5">
+            <h3 class="title" id="assignment5Title">Assignment 5: "Sleeping TA"</h3>
+            <button id="button5" value = "5" onClick="openModal(this.value)">
+                <img src="img/sleeping_TA.png">
+            </button>
+        </div>
+        
+        <div id="modal5" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="close5">&times;</span>               
+                <p>
+                    This project includes generic threading of "students" waiting on a "TA" to get help on a programming assignment in real time. The TA can only help 1 student at a time, and a max of 3 students can wait for help at a time, otherwise they return to programming for a random amount of time before attempting to get help again.
+
+                </p>
+                <p>
+                    This served as the first time at Westminster that I programmed a somewhat sophisticated application that utilized multithreading, mutexes and semaphores. To that point, it's the first time that I've used semaphores at all. This served as a great opportunity to expand my knowledge of multithreading within the context of the Linux Operating system - this was a small scale simulation of virtual memory management in a similar way to how Linux does the same. This was coupled with investigations into Linux source code as inspiration for how it should be done in my application. 
+                    
+                </p>
+                <a href="https://github.com/ryankupk/CMPT385-Portfolio/tree/master/programs/sleeping%20ta" target="_blank">Link to project on GitHub</a>
+            </div>
+
+        </div>
+
+
+       
+
+        
+        <div class="assignment" id="assignmentResume">
             <h3 class="title" id="resumeTitle">Resume</h3>
             <a id="resume" href="https://pdfhost.io/v/O7IJL7MXy_Resume_currentpdf.pdf" target=_blank>
                 <img src="img/resume.png">
             </a>
         </div>
         
+
+        <div class="assignment" id="assignmentProject">
+            <h3 class="title" id="assignmentProjectTitle">Senior Project: Chess Opening Trainer</h3>
+            <button id="buttonProject" value = "Project" onClick="openModal(this.value)">
+                <img src="img/proj.png">
+            </button>
+        </div>
+        
+        <div id="modalProject" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="closeProject">&times;</span>               
+                <p>
+                    To date, there isn't a simple and effective application to learn and practice openings on the internet. There are, of course, various ways to do so, but they're inconvenient, slow, expensive, highly restricted, or all of the above. For my senior project, I decided to put my own spin on an opening trainer which brings all of the best things about opening practice together in one place. The application is a simple webpage with various options for expanding one's repertoire. As far as I know, it's also the only site with real-time, responsive analysis from StockFish 11 running server-side for high-depth, quick analysis.
+
+                </p>
+                <p>
+                    This project integrated nearly everything that I've learned in my computer science career in university. It touches on basically everything that a program may do from the ground up: it creates a child process running another application (which happens to be a high-level, minimax AI engine acquired from a personally modified API) and pipes I/O back and forth from that process. The I/O of this engine is sent across the network via a websocket, which I learned about by working with a friend, to the client and is displayed on the webpage. It uses several languages including HTML/CSS/JS, python, and several libraries within each of those languages.  
+                    
+                </p>
+                <a href="#" target="_blank">Link to project on GitHub</a>
+                <br/><hr><br/>
+                <a href="https://chessopeningtrainer.pythonanywhere.com/" target="_blank">Link to project hosted on PythonAnywhere</a>
+                <br/>
+                <i>Note: the host of the site, PythonAnywhere, does not allow websockets, so real-time analysis is not functional on the site currently</i>
+            </div>
+
+        </div>
         
         
         <script>
@@ -83,24 +194,16 @@
                 
                 // When the user clicks on <span> (x), close the modal
                 span.onclick = function() {
-                  modal.style.display = "none";
+                    modal.style.display = "none";
                 }
                 
                 // When the user clicks anywhere outside of the modal, close it
                 window.onclick = function(event) {
-                  if (event.target == modal) {
+                    if (event.target == modal) {
                     modal.style.display = "none";
-                  }
+                    }
                 }
-
-               
-            
             }
-            
-            
-            
-            
-        
         </script>
         
         

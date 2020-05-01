@@ -4,7 +4,9 @@ body {
     grid-template-rows: auto;
     grid-template-areas: ".  header  header  ."
                          ".  assign1 assign2 ."
-                         ".  assign3 assign4 .";
+                         ".  assign3 assign4 ."
+                         ".  assign5 assignRes ."
+                         ".  assignProj assignProj .";
     grid-gap: 25px;
 }
 
@@ -45,6 +47,24 @@ button {
 #assignment3 {
     grid-area: assign3;
 }
+
+#assignment4 {
+    grid-area: assign4;
+}
+
+#assignment5 {
+    grid-area: assign5;
+}
+
+#assignmentProject {
+    grid-area: assignProj;
+}
+
+#assignmentResume {
+    grid-area: assignRes;
+}
+
+
 
 .assignment {
     max-height: 200px;
